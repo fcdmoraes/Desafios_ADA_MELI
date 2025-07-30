@@ -13,7 +13,7 @@ public class Produto {
         this.estoque = estoque;
     }
 
-    public Produto(String nome, int preco){
+    public Produto(String nome, double preco){
         this.itemId = produtos++;
         this.nome = nome;
         this.preco = preco;

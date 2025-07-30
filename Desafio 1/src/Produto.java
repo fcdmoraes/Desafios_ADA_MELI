@@ -20,12 +20,12 @@ public class Produto {
         this.estoque = 0;
     }
 
-    public void adicionarEstoque(int estoque) {
-        this.estoque = estoque;
+    public void adicionarEstoque(int quantidade) {
+        this.estoque += quantidade;
     }
 
     public void vender(int quantidade){
-        if(estoque > quantidade){
+        if(estoque >= quantidade){
             estoque -= quantidade;
         }
         else{

@@ -1,6 +1,6 @@
 public class Conta {
     private String titular;
-    private int numero;
+    private final int numero;
     private double saldo;
     private String senha;
     private boolean temporario;

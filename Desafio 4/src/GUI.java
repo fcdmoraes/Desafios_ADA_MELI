@@ -58,7 +58,7 @@ public class GUI {
         System.out.println("Digite o valor para depositar na conta: ");
         try {
             double saldo = Double.parseDouble(scanner.nextLine());
-            Conta conta = repositorio.criarConta(titular, saldo);
+            repositorio.criarConta(titular, saldo);
         }
         catch (NumberFormatException e) {
             System.out.println("Valor inválido");
@@ -144,7 +144,7 @@ public class GUI {
             String senha = scanner.nextLine();
             if(repositorio.atualizarConta(conta, senha)){
                 break;
-            };
+            }
         }
     }
 }
